@@ -44,9 +44,6 @@
                 text-align: center;
             }
 
-            .title {
-                font-size: 84px;
-            }
 
             .links > a {
                 color: #636b6f;
@@ -58,8 +55,10 @@
                 text-transform: uppercase;
             }
 
-            .m-b-md {
-                margin-bottom: 30px;
+            .form_generate_btn {
+                font-size: 24px;
+                padding: 10px;
+                cursor: pointer;
             }
         </style>
     </head>
@@ -84,7 +83,7 @@
                 <div>
                     <form action="/" method="post" id="form_generate">
                         @csrf
-                        <button type="submit" form="form_generate" value="Submit">Генерировать</button>
+                        <button type="submit" form="form_generate" value="Submit" class="form_generate_btn">Генерировать</button>
                     </form>
                 </div>
             </div>
